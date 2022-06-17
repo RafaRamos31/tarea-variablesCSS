@@ -11,19 +11,34 @@
 </head>
 <body>
     <header class="margin-info">
-        <a href=""><img class="menu-icon" src="http://cdn.onlinewebfonts.com/svg/img_520301.png" alt="menu"></a>
+        <a href="javascript:void(0);"><img class="menu-icon" src="http://cdn.onlinewebfonts.com/svg/img_520301.png" alt="menu"></a>
         <h2>Copán Stadistics</h2>
-        <a href=""><img class="toggle-icon" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Toggle_blue.png" alt="toggle"></a>
+        <a href="javascript:void(0);"><img class="toggle-icon" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Toggle_blue.png" alt="toggle"></a>
     </header>
     
     <div class="main">   
         <h1>Encuesta de Calidad de Servicio</h1>
-        <form action="_blank">
-            <label for="">1. ¿Que probabilidad hay de que recomiende
+        <form action="localhost">
+            <label for="">1. En la escala del 0 al 10, ¿Que probabilidad hay de que recomiende
                 nuestros productos o servicios a sus familiares, colegas o amigos?</label><br>
-            <input type="range" name="quest1" id=""><hr>
+            <div class="quest1">
+                <input type="range" name="quest1" min="0" max="10" step="1"><br>
+                <div class="marcas">
+                    <label>0</label>
+                    <label>1</label>
+                    <label>2</label>
+                    <label>3</label>
+                    <label>4</label>
+                    <label>5</label>
+                    <label>6</label>
+                    <label>7</label>
+                    <label>8</label>
+                    <label>9</label>
+                    <label>10</label>
+                </div>
+            </div><hr>
 
-            <label for="">2. ¿ Planeas comprar productos similares a los de nuestra compañia
+            <label>2. ¿ Planeas comprar productos similares a los de nuestra compañia
                 en el futuro?</label><br>
             <fieldset id="quest2">
                 <div>
@@ -37,16 +52,16 @@
                 </div>
             </fieldset><hr>  
 
-            <label for="">3. ¿Cuales de los siguientes productos le interesaria mas que vendieramos 
+            <label>3. ¿Cuales de los siguientes productos le interesaria mas que vendieramos 
                 en nuestras sucursales?</label><br>
-            <fieldset id="quest3">
+            <fieldset class="quest3">
                 <input type="button" value="Repuestos">
                 <input type="button" value="Electrónica">
                 <input type="button" value="Jardinería">
                 <input type="button" value="Cocina">
             </fieldset><hr>  
 
-            <label for="">4. Escriba un comentario adicional sobre su opinion acerca 
+            <label>4. Escriba un comentario adicional sobre su opinion acerca 
                 de nuestros productos</label><br>
             <input type="text" placeholder="Ingrese su comentario aquí..."><br>
             <input type="submit" value="Enviar">
