@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta author="RafaRamos31">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Variables CSS</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="margin-info">
+        <a href=""><img class="menu-icon" src="http://cdn.onlinewebfonts.com/svg/img_520301.png" alt="menu"></a>
+        <h2>Copán Stadistics</h2>
+        <a href=""><img class="toggle-icon" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Toggle_blue.png" alt="toggle"></a>
+    </header>
+    
+    <div class="main">   
+        <h1>Encuesta de Calidad de Servicio</h1>
+        <form action="_blank">
+            <label for="">1. ¿Que probabilidad hay de que recomiende
+                nuestros productos o servicios a sus familiares, colegas o amigos?</label><br>
+            <input type="range" name="quest1" id=""><hr>
+
+            <label for="">2. ¿ Planeas comprar productos similares a los de nuestra compañia
+                en el futuro?</label><br>
+            <fieldset id="quest2">
+                <div>
+                    <input type="radio" value="Sí" name="quest2">Sí
+                </div>
+                <div>
+                    <input type="radio" value="No" name="quest2">No
+                </div>
+                <div>
+                    <input type="radio" value="No lo sé" name="quest2">No lo sé
+                </div>
+            </fieldset><hr>  
+
+            <label for="">3. ¿Cuales de los siguientes productos le interesaria mas que vendieramos 
+                en nuestras sucursales?</label><br>
+            <fieldset id="quest3">
+                <input type="button" value="Repuestos">
+                <input type="button" value="Electrónica">
+                <input type="button" value="Jardinería">
+                <input type="button" value="Cocina">
+            </fieldset><hr>  
+
+            <label for="">4. Escriba un comentario adicional sobre su opinion acerca 
+                de nuestros productos</label><br>
+            <input type="text" placeholder="Ingrese su comentario aquí..."><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    
+    <footer class="margin-info">
+        <p>©2022 - Copán Stadistics</p>
+    </footer>
+</body>
+</html>

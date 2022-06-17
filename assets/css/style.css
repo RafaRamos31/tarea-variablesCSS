@@ -1,0 +1,155 @@
+:root{
+    /*Colores modo diurno*/
+
+    --font-color: black;
+    --bg-color: white;
+    --title-color: #5AB015;
+    --enfasis-color: #48E212;
+    --secundary-color: #93C165;
+    --form-bg-color: #C3F88E;
+    
+    /*Colores modo nocturno*/
+
+    /* --font-color: white;
+    --bg-color: #3C3C3C;
+    --title-color: black;
+    --enfasis-color: #B31CFA;
+    --secundary-color: #261c4e;
+    --form-bg-color: #18141b; */
+}
+
+/*Fondo*/
+
+body{
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+/*Header y Footer*/
+
+.margin-info{
+    background-color: var(--secundary-color);
+}
+
+.menu-icon{
+    margin: 5px;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.toggle-icon{
+    position: absolute;
+    right: 0;
+    margin: 6px;
+    max-height: 25px;
+}
+
+
+footer{
+    bottom: 0;
+    text-align: center;
+    padding: 5px;
+}
+
+h2{
+    position: absolute;
+    display: inline-block;
+    margin: 5px;
+}
+
+/*Formulario*/
+
+form{
+    text-align: center;
+    padding-top: 5px;
+}
+
+p{
+    margin: 0;
+}
+
+label{
+    padding: 15px;
+}
+
+
+.main{
+    margin: 10px;
+    background-color: var(--form-bg-color);
+    border-radius: 30px;
+}
+
+h1{
+    margin: 0px;
+    background-color: var(--title-color);
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 5px 0;
+}
+
+input[type=range]{
+    margin: 5px;
+    width: 70%;
+}
+
+hr{
+    border: 2px solid var(--bg-color);
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#quest3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+input[type=button]{
+    color: var(--font-color);
+    background-color: var(--secundary-color);
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+input[type=button]:hover{
+    color: var(--font-color);
+    background-color: var(--enfasis-color);
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+input[type=text]{
+    color: var(--font-color);
+    background-color: var(--secundary-color);
+    border: none;
+    margin: 15px;
+    width: 90%;
+    height: 150px;
+    
+}
+
+::placeholder{
+    color: var(--font-color);
+}
+
+input[type=submit]{
+    border: none;
+    border-radius: 40px;
+    color: var(--font-color);
+    background-color: var(--enfasis-color);
+    padding: 10px;
+    font-size: x-large;
+    margin: 15px;
+    width: 130px;
+}
+
